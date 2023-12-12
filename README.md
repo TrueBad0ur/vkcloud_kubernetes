@@ -4,9 +4,9 @@ Setup k8s cluster in vk cloud and Nginx Ingress
 # Terraform
 [Official manual](https://cloud.vk.com/docs/manage/tools-for-using-services/terraform/quick-start)
 
-1. Download vkcs_provider.tf and terraform.rc from project settings in account
-2. Put vkcs_provider.tf in local folder, cat terraform.rc to ~/.terraformrc
-3. You can also your password into local vkcs_provider.tf file
+1. Download ```vkcs_provider.tf``` and ```terraform.rc``` from project settings in account
+2. Put ```vkcs_provider.tf``` in local folder, cat terraform.rc to ```~/.terraformrc```
+3. You can also your password into local ```vkcs_provider.tf``` file
 
 # Kubernetes cluster via terraform
 All configs are in the repo
@@ -17,7 +17,7 @@ All configs are in the repo
 4. install ```keystone-auth```
 
    ```curl -sSL https://hub.mcs.mail.ru/repository/client-keystone-auth/latest/linux/client-install.sh | bash```
-6. After cluster creation in Account → Containers → Kubernetes Clusters you can download kubeconfig in <cluster name>_kubeconfig.yaml format
+6. After cluster creation in Account → Containers → Kubernetes Clusters you can download kubeconfig in ```<cluster name>_kubeconfig.yaml``` format
 7. Then put it's contents to ```~/.kube/config``` or put it somewhere, for ex: ```/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml``` and set ```export KUBECONFIG=/home/user/.kube/kubernetes-cluster-1234_kubeconfig.yaml```
 8. Test - ```kubectl get nodes```
 
