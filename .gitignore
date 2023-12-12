@@ -1,0 +1,4 @@
+terraform.tfstate
+vkcs_provider.tf
+.terraform/*
+.terraform.lock.hcl
